@@ -83,6 +83,8 @@ jobs:
 
     - name: Commit and push changes
       run: |
+        git config user.email "sau@gmail.com"
+        git config user.name "Saur"
         git add helm/go-web-app-chart/values.yaml
         git commit -m "Update tag in Helm chart"
         git push
